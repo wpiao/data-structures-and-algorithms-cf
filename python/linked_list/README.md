@@ -1,3 +1,24 @@
+# Linked List Insertions - 12/20/2021
+
+**Author**: Wenhao Piao  
+**Pair programming partner**: Arthur
+
+## Whiteboard Process
+
+![Linked List Insertions](linked_list_insertions.png)
+
+## API
+
+- `append` method:
+  - arguments: new value
+  - adds a new node with the given value to the end of the list
+- `insert_before` method:
+  - arguments: value, new value
+  - adds a new node with the given new value immediately before the first node that has the value specified
+- `insert_after` method:
+  - arguments: value, new value
+  - adds a new node with the given new value immediately after the first node that has the value specified
+
 # Singly Linked List - 12/18/2021
 
 Implement singly linked lists and its insert, includes, and to_strint method
