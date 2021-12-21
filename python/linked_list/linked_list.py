@@ -54,6 +54,44 @@ class LinkedList:
             current = current.next
         return result + "None"
 
+    def append(self, value):
+        node = Node(value)
+        if self.head == None:
+            self.head = node
+        else:
+            current = self.head
+            while current:
+                if current.next == None:
+                    current.next = node
+                    break
+                else:
+                    current = current.next
+
+    def insert_before(self, target, value):
+        node = Node(value)
+        current = self.head
+        prev = self.head
+        while current:
+            if current.value == target:
+                prev.next = node
+                node.next = current
+                break
+            else:
+                prev = current
+                current = current.next
+
+    def insert_after(self, target, value):
+        node = Node(value)
+        current = self.head
+        while current:
+            if current.value == target:
+                next = current.next
+                current.next = node
+                node.next = next
+                break
+            else:
+                current = current.next
+
 class Node:
     """
     Each node has value property and next property. The next property represent a node it points to.
