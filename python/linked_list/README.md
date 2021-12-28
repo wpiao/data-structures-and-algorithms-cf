@@ -1,3 +1,20 @@
+# Linked List - kth from end - 12/27/2021
+
+Return k-th value from the end of a linked list.
+
+## Whiteboard Process
+
+![Kth From End](kth_from_end.png)
+
+## API
+
+- `kth_from_end` method:
+  - argument: integer k
+  - return kth node value from the end of the linked list
+    - if k is negative, return `None`
+    - if kth node from the end doesn't exist, return `None`
+    - if linked list is empty, return `None`
+
 # Linked List Insertions - 12/20/2021
 
 **Author**: Wenhao Piao  

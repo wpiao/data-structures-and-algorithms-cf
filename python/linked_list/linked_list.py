@@ -92,6 +92,20 @@ class LinkedList:
             else:
                 current = current.next
 
+    def kth_from_end(self, k):
+        if k < 0:
+            return None
+        else:
+            current = self.head
+            values = []
+            while current:
+                values.append(current.value)
+                current = current.next
+            if k >= len(values):
+                return None
+            else:
+                return values[-k - 1]
+
 class Node:
     """
     Each node has value property and next property. The next property represent a node it points to.
