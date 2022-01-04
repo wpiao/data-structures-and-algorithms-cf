@@ -1,3 +1,19 @@
+# Zip two linked lists - 01/03/2022
+
+Write a function called zip lists that takes two linked lists as inputs and return a new linked list that zip second linked list to first linked list
+
+## Whiteboard Process
+
+![Zip Two Linked Lists](linked_list_zip.png)
+
+## API
+
+- `zip_lists` function
+  - Arguments: 2 linked lists
+  - Return: New Linked List
+  - Description: Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the the zipped list.
+  - Have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+
 # Linked List - kth from end - 12/27/2021
 
 Return k-th value from the end of a linked list.
