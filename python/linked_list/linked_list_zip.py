@@ -1,5 +1,4 @@
-# from linked_list import LinkedList
-from linked_list.linkedlist import LinkedList
+from linked_list.linked_list import LinkedList
 
 def zip_lists_new(ll_one, ll_two):
     current_one = ll_one.head
