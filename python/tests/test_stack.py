@@ -5,13 +5,13 @@ import pytest
 
 def test_with_empty_stack(empty_stack):
     assert empty_stack.top == None
-    assert empty_stack.isEmpty() == True
+    assert empty_stack.is_empty() == True
     empty_stack.push(1)
     assert empty_stack.top.value == 1
-    assert empty_stack.isEmpty() == False
+    assert empty_stack.is_empty() == False
     assert empty_stack.peek() == 1
     empty_stack.pop()
-    assert empty_stack.isEmpty() == True
+    assert empty_stack.is_empty() == True
     assert empty_stack.top == None
  
 def test_with_empty_stack_exception(empty_stack):
@@ -29,7 +29,7 @@ def test_with_stack_with_top_1_2_bottom_3(stack_with_top_1_2_bottom_3):
     assert stack_with_top_1_2_bottom_3.top.next.next.value == 3
     assert stack_with_top_1_2_bottom_3.top.next.next.next == None
     assert stack_with_top_1_2_bottom_3.peek() == 1
-    assert stack_with_top_1_2_bottom_3.isEmpty() == False
+    assert stack_with_top_1_2_bottom_3.is_empty() == False
 
 @pytest.fixture
 def stack_with_top_1_2_bottom_3():
