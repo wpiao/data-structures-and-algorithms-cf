@@ -1,3 +1,36 @@
+# Implement Queue with two Stacks - 01/17/2022
+
+Using two Stacks to implement Queue
+
+## Challenges
+
+No challenges
+
+## Queue methods API
+
+- Queue methods:
+
+  - enqueue
+
+    - arguments: value
+
+  - dequeue
+
+    - Arguments: none
+    - Returns: the value from node from the front of the queue
+    - Removes the node from the front of the queue
+    - Should raise exception when called on empty queue
+
+  - peek
+
+    - Arguments: none
+    - Returns: Value of the node located at the front of the queue
+    - Should raise exception when called on empty stack
+
+  - is_empty
+    - Arguments: none
+    - Returns: Boolean indicating whether or not the queue is empty
+
 # Stack and Queue - 01/11/2022
 
 Using a Linked List as the underlying data storage mechanism, implement both a Stack and a Queue
