@@ -1,3 +1,15 @@
+# First-in, First-out Animal Shelter - 01/20/2022
+
+Implement First-in, First-out Animal Shelter
+
+## Challenges
+
+No challenges
+
+## Whiteboard process
+
+![Animal Shelter](animal_shelter.png)
+
 # Implement Queue with two Stacks - 01/17/2022
 
 Using two Stacks to implement Queue
