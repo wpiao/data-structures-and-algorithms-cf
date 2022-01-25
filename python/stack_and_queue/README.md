@@ -1,3 +1,19 @@
+# Validate Brackets - 01/24/2022
+
+Write a function called validate brackets that check if or not the brackets in the input string are balanced
+
+## Challenges
+
+No challenges
+
+## Whiteboard process
+
+![Validate Brackets](validate_brackets.png)
+
+## Unit Test
+
+Run command `pytest` to run the unit test
+
 # First-in, First-out Animal Shelter - 01/20/2022
 
 Implement First-in, First-out Animal Shelter
