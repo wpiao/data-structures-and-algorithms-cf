@@ -38,3 +38,6 @@ class BinaryTree:
             values.append(root.value)
         walk(self.root)
         return values
+    
+    def get_max(self):
+        pass
