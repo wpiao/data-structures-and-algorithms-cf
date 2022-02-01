@@ -13,7 +13,32 @@ class BinarySearchTree(BinaryTree):
                 elif value > current.value:
                     if current.right is None:
                         current.right = Node(value)
+                        break
+                    else:
+                        current = current.right
+                else:
+                    if current.left is None:
+                        current.left = Node(value)
+                        break
+                    else:
+                        current = current.left
                     
 
     def contains(self, value):
-        pass
+        if self.root is None:
+            return False
+        else:
+            current = self.root
+            while True:
+                if value == current.value:
+                    return True
+                elif value > current.value:
+                    if current.right is None:
+                        return False
+                    else:
+                        current = current.right
+                else:
+                    if current.left is None:
+                        return False
+                    else:
+                        current = current.left
