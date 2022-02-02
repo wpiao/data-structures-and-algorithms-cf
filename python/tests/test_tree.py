@@ -28,6 +28,57 @@ def test_binary_tree(bt):
     assert bt.in_order() == [3, 1, 0, 2, 4]
     assert bt.post_order() == [3, 1, 4, 2, 0]
 
+# test BinaryTree class get_max method
+def test_get_max_with_empty_bt():
+    empty_bt = BinaryTree()
+    assert empty_bt.get_max() == None
+
+def test_get_max_leaf(bt):
+    assert bt.get_max() == 4
+
+def test_get_max_root():
+    root = Node(10)
+    node1 = Node(8)
+    node2 = Node(6)
+    node3 = Node(4)
+    node4 = Node(2)
+    root.left = node1
+    root.right = node2
+    node1.left = node3
+    node1.right = node4
+    bt = BinaryTree(root)
+    assert bt.get_max() == 10
+
+def test_get_max_left_middle():
+    root = Node(0)
+    node1 = Node(5)
+    node2 = Node(10)
+    node3 = Node(50)
+    node4 = Node(30)
+    node5 = Node(20)
+    root.left = node1
+    root.right = node2
+    node1.left = node3
+    node3.left = node4
+    node2.left = node5
+    bt = BinaryTree(root)
+    assert bt.get_max() == 50
+
+def test_get_max_right_middle():
+    root = Node(0)
+    node1 = Node(5)
+    node2 = Node(10)
+    node3 = Node(100)
+    node4 = Node(30)
+    node5 = Node(20)
+    root.left = node1
+    root.right = node2
+    node2.left = node3
+    node3.left = node4
+    node1.left = node5
+    bt = BinaryTree(root)
+    assert bt.get_max() == 100
+    
 @pytest.fixture
 def bt():
     root = Node(0)

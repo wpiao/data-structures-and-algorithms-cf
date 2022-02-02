@@ -1,3 +1,20 @@
+# Binary Tree class get_max method implementation - 01/31/2022
+
+Implement get_max method to find the maximum value in a binary tree
+
+## Implementation
+
+I referenced the implementation of pre-order traversal and slightly modified it to implement get_max method. In walk helper function, instead of append current value to the list, I compared current root value with current max value and store bigger one to max so that we get maximum value in max variable after all recursive walk functions are done.
+
+## get_max method API
+
+- arguments: none
+- returns: number; if empty binary tree, return None
+
+## Unit tests
+
+Run command `pytest` to run the test
+
 # Binary Tree and BST Implementation - 01/29/2022
 
 - Implement Binary Tree class and its traversal methods
