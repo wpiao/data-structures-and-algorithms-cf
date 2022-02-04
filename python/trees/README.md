@@ -1,3 +1,24 @@
+# Breadth First Traversal - 02/03/2022
+
+Implement Breadth-first traversal
+
+## Challenges
+
+No Challenges
+
+## Whiteboard process
+
+![Breadth First Traversal](breadth_first.png)
+
+## API
+
+- arguments: tree
+- Return: list of all values in the tree, in the order they were encountered - breadth first traversal
+
+## Unit tests
+
+Run command `pytest tests/test_breadth_first.py` to run test
+
 # Binary Tree class get_max method implementation - 01/31/2022
 
 Implement get_max method to find the maximum value in a binary tree
