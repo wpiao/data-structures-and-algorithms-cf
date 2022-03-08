@@ -1,3 +1,19 @@
+# Merge Sort - 03/03/2022
+
+```text
+      [8,4,23,42,16,15]
+    [8,4,23]       [42,16,15]
+  [8]   [4,23]   [42]     [16,15]
+ [8]   [4] [23] [42]     [16]  [15]
+ [8]   [4,23]   [42]     [15,16]
+   [4,8,23]        [15,16,42]
+      [4,8,15,16,23,42]
+```
+
+### Unit tests
+
+Run command `pytest` to run the unit tests
+
 # Insertion Sort - 02/28/2022
 
 ## Insertion sort stepping through - `[8,4,23,42,16,15]`
