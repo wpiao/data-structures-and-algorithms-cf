@@ -1,3 +1,17 @@
+# Quick Sort - 03/07/2022
+
+```text
+(8,4,23,42,16,15) pivot:15
+(8,4) pivot:4 (15) (42,16,23)
+(4,8,15) (42,16,23) pivot:23
+(4,8,15) (16) (23,42) pivot:42
+(4,8,15,16,23,42)
+```
+
+### Unit tests
+
+Run command `pytest` to run the unit tests
+
 # Merge Sort - 03/03/2022
 
 ```text
