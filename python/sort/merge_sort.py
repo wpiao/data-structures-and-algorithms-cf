@@ -1,7 +1,7 @@
 def merge_sort(l):
     n = len(l)
     if n > 1:
-        mid = n / 2
+        mid = n // 2
         left = l[0:mid]
         right = l[mid:n]
         merge_sort(left)
@@ -19,4 +19,7 @@ def merge(left, right, l):
             j += 1
         k += 1
 
-    # if i == len(left):
+    if i == len(left):
+        l[k:] = right[j:]
+    else:
+        l[k:] = left[i:]
