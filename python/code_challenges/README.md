@@ -23,3 +23,17 @@ No challenges
 ## Unit test
 
 Run command `pytest tests/test_repeated_word.py` to run the pytest
+
+# Find sum of odd numbers in a binary search tree - 02/10/2022
+
+## Challenges
+
+No Challenges
+
+## Whiteboard process
+
+![sum of odd numbers in a binary search tree](sum_of_odd.png)
+
+## Unit tests
+
+Run command `pytest tests/test_sum_of_odd.py` to run unit tests
