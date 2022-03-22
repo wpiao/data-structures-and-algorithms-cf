@@ -9,5 +9,3 @@ def hashmap_left_join(hmap1, hmap2):
         else:
             result.add(key, [hmap1.get(key), None])
     return result
-
-#
