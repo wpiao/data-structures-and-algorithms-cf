@@ -1,3 +1,17 @@
+# Hashmap left join - 03/21/2022
+
+## Challenges
+
+No challenges
+
+## Whiteboard process
+
+![Hashmap left join](hashmap_left_join.png)
+
+## Unit tests
+
+Run command `pytest tests/test_hashmap_left_join.py` to run unit tests
+
 # Hash Table Implementation - 03/12/2022
 
 ## Challenges
