@@ -1,3 +1,5 @@
+# Lab: 36 - Computational Thinking
+
 # Find common values in 2 binary trees - 03/17/2022
 
 Write a function called `tree_intersection` that takes two binary trees as parameters. Using your Hashmap implementation as a port of your algorighm, return a set of values found in both trees.
