@@ -1,3 +1,6 @@
+from stack_and_queue.queue import Queue
+
+
 class Graph:
 
     def __init__(self):
@@ -54,6 +57,34 @@ class Graph:
         # Arguments: none
         # Returns the total number of nodes in the graph
         return len(self.nodes)
+
+    def breadth_first_search(self, vertex):
+        # Arguments: vertex/node
+        # Returns a list of vertex in the order they were visited
+        nodes_list = []
+        q = Queue()
+        visited = set()
+
+        q.enqueue(vertex)
+        visited.add(vertex)
+
+        while not q.is_empty():
+            front = q.dequeue()
+            neighbor = self.get_neighbor(front)
+            nodes_list.append(front)
+
+            for edge in neighbor:
+                if edge.v1 == front:
+                    if edge.v2 not in visited:
+                        q.enqueue(edge.v2)
+                        visited.add(edge.v2)
+                else:
+                    if edge.v1 not in visited:
+                        q.enqueue(edge.v1)
+                        visited.add(edge.v1)
+        return nodes_list
+
+
 
 
 class Vertex:
