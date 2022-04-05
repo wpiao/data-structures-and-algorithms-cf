@@ -68,6 +68,18 @@ def test_graph_methods():
 
     # test size method
     assert g.size() == 3
+
+    # test breadth_first_search method
+    assert g.breadth_first_search(a)[0] == a
+    assert g.breadth_first_search(a)[1] == b
+    assert g.breadth_first_search(a)[2] == c
+    assert g.breadth_first_search(b)[0] == b
+    assert g.breadth_first_search(b)[1] == a
+    assert g.breadth_first_search(b)[2] == c
+    assert g.breadth_first_search(c)[0] == c
+    assert g.breadth_first_search(c)[1] == a
+    assert g.breadth_first_search(c)[2] == b
+
 @pytest.fixture
 def empty_graph():
     return Graph()

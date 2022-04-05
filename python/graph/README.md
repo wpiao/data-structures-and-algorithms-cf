@@ -1,3 +1,19 @@
+# Graph Breadth First Search Implementation - 04/04/2022
+
+## Challenges
+
+No Challenges
+
+## API
+
+- breadth_first_search
+  - Arguments: vertex/node
+  - Returns a list of vertex in the order they were visited
+
+## Unit tests
+
+Run command `pytest python/tests/test_graph.py` to run unit tests.
+
 # Graph implementation - 03/29/2022
 
 ## Challenges
