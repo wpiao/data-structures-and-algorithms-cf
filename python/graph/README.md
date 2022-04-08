@@ -1,3 +1,21 @@
+# business trip function implementation via graph - 04/07/2022
+
+Given a business trip ititerary, find out if the trip possible with direct flights? If so, how much will the total trip cost be?
+
+## Challenges
+
+No Challenges
+
+## API
+
+- business_trip
+  - Arguments: graph, array of city names
+  - Return (boolean, number)
+
+## Unit tests
+
+Run command `pytest python/tests/test_business_trip.py` to run unit tests.
+
 # Graph Breadth First Search Implementation - 04/04/2022
 
 ## Challenges
