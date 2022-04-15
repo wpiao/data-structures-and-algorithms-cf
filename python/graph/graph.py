@@ -1,4 +1,5 @@
 from stack_and_queue.queue import Queue
+from stack_and_queue.stack import Stack
 
 
 class Graph:
@@ -83,6 +84,28 @@ class Graph:
                         q.enqueue(edge.v1)
                         visited.add(edge.v1)
         return nodes_list
+
+    def depth_first_search(self, vertex):
+        # Arguments: vertex/node - starting point of search
+        # Return: A collection of nodes in depth-first traversal order
+        nodes_list = []
+        s = Stack()
+        visited = set()
+        s.push(vertex)
+        # visited.add(vertex)
+
+        while not s.is_empty():
+            top = s.peek()
+            neighbor_nodes_list = self.adjacency_list[top]['nodes']
+            if top not in visited:
+                nodes_list.append(top)
+                visited.add(top)
+            for neighbor_node in neighbor_nodes_list:
+                if neighbor_node not in visited:
+                    s.push(neighbor_node)
+                    visited.add
+                    pass
+
 
 
 
